@@ -42,3 +42,12 @@ def simple_view(request):
 
 def add(request,a,b):
     return HttpResponse(f"adding {a} & {b} gives: {a+b}")
+
+def fname(request,username):
+    return HttpResponse(f"Welcome {username}")   
+
+def report(request,date):
+    return HttpResponse(f"Report for date: {date}")
+
+def email_url(request,email):
+    return HttpResponse(f"user email is: {email}")
